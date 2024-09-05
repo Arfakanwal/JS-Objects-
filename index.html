@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS(OBJECTS)</title>
+</head>
+<body>
+    
+      <h2>Population Data Entry</h2>
+      <form id="populationForm">
+        <label>Name:</label>
+        <input type="text" id="name" required><br><br>
+    
+        <label>Gender:</label>
+        <input type="radio" id="male" name="gender" value="Male" required> Male
+        <input type="radio" id="female" name="gender" value="Female" required> Female
+        <br><br>
+    
+        <label>Address:</label>
+        <input type="text" id="address" required><br><br>
+    
+        <label>Education:</label>
+        <select id="education" required>
+          <option value="High School">High School</option>
+          <option value="Undergraduate">Undergraduate</option>
+          <option value="Graduate">Graduate</option>
+          <option value="Post Graduate">Post Graduate</option>
+        </select><br><br>
+    
+        <label>Profession:</label>
+        <select id="profession" required>
+          <option value="Doctor">Doctor</option>
+          <option value="Engineer">Engineer</option>
+          <option value="Teacher">Teacher</option>
+          <option value="Business">Business</option>
+        </select><br><br>
+    
+        <button type="button" onclick="saveRecord()">Save Record</button>
+      </form>
+    
+      <h3>All Records</h3>
+      <div id="records"></div>
+    
+
+   
+    
+
+
+
+    <script src="app.js"></script>
+</body>
+</html>
